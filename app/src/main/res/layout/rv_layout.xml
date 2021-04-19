@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#A2DDE6"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="375dp"
+                android:src="@drawable/room2" />
+
+            <Button
+                android:id="@+id/btncheckIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check In"
+                app:backgroundTint="#DD2C00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:text="Room ID:"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_Cname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:text="Customer Name:"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_phoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7sp"
+                android:text="Phone Number:"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_numC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7sp"
+                android:text="Number of Guests:"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_custbR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7sp"
+                android:text="Customer Reques:"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_startDays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7sp"
+                android:text="Start Date:"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_endDays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7sp"
+                android:text="End Date:"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_dDays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7sp"
+                android:text="Booking Days:"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_tCosts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7sp"
+                android:text="Payment Status:"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_roomID"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="10sp"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:padding="10sp"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_phoneN"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:padding="5sp"
+                android:text="@string/app_name"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_numG"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:padding="5sp"
+                android:text="@string/app_name"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_custR"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:padding="5sp"
+                android:text="@string/app_name"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_startD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:padding="5sp"
+                android:text="@string/app_name"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_endD"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:padding="5sp"
+                android:text="@string/app_name"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_bDay"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:padding="5sp"
+                android:text="@string/app_name"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_tCost"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginStart="10sp"
+                android:layout_marginLeft="10sp"
+                android:padding="5sp"
+                android:text="@string/app_name"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+package com.example.security
+
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.text.TextUtils
+import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.activity_login.*
+
+class LoginActivity : AppCompatActivity() {
+
+    lateinit var auth: FirebaseAuth
+
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_login)
+
+        auth = FirebaseAuth.getInstance()
+
+        val currentuser = auth.currentUser
+        if(currentuser != null) {
+            startActivity(Intent(this@LoginActivity, HomepageActivity::class.java))
+            finish()
+        }
+        login()
+
+        tv_forgetpass.setOnClickListener {
+            val intent = startActivity(Intent(this@LoginActivity, ForgetPasswordActivity::class.java))
+        }
+    }
+
+    private fun login() {
+
+        loginButton.setOnClickListener {
+
+            if(TextUtils.isEmpty(usernameInput.text.toString())){
+                usernameInput.setError("Please enter email")
+                return@setOnClickListener
+            }
+            else if(TextUtils.isEmpty(passwordInput.text.toString())){
+                passwordInput.setError("Please enter password")
+                return@setOnClickListener
+            }
+
+            auth.signInWithEmailAndPassword(usernameInput.text.toString(), passwordInput.text.toString())
+                .addOnCompleteListener {
+                    if(it.isSuccessful) {
+                        startActivity(Intent(this@LoginActivity, ProfileActivity::class.java))
+                        finish()
+                    } else {
+                        Toast.makeText(this@LoginActivity, "Login failed, please try again! ", Toast.LENGTH_LONG).show()
+                    }
+                }
+
+        }
+
+
+        registerText.setOnClickListener{
+            val intent = startActivity(Intent(this@LoginActivity, RegistrationActivity::class.java))
+        }
+    }
+
+}
