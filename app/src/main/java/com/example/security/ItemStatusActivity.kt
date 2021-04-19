@@ -8,14 +8,9 @@ import kotlinx.android.synthetic.main.housekeep.view.*
 import androidx.recyclerview.widget.RecyclerView
 import android.content.Intent
 import android.widget.Toast
-import com.example.security.EXTRA_MESSAGE
-import com.example.security.ItemStatus
-import com.example.security.Room
-import com.google.firebase.database.R
-import kotlinx.android.synthetic.main.activity_edit_item_status.*
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_item_status.*
 
-class EditItemStatusActivity : AppCompatActivity() {
+class ItemStatusActivity : AppCompatActivity() {
 
     private lateinit var database:FirebaseDatabase
     private lateinit var reference: DatabaseReference
@@ -24,7 +19,7 @@ class EditItemStatusActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_edit_item_status)
+        setContentView(R.layout.activity_item_status)
 
         var curRoomID = intent.getStringExtra(EXTRA_MESSAGE)
         tv_hk_roomID.text = curRoomID

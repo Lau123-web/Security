@@ -27,7 +27,7 @@ class GetData : AppCompatActivity() {
 
             var roomID = txt_data_roomID.text.toString().trim()
             if(roomID.isNotEmpty()){
-                val intent = Intent(this, EditItemStatusActivity::class.java).apply {
+                val intent = Intent(this, ItemStatusActivity::class.java).apply {
                     putExtra(EXTRA_MESSAGE, roomID)
                 }
                 referance.addListenerForSingleValueEvent(object : ValueEventListener
