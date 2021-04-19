@@ -1,14 +1,12 @@
-package com.example.assignment
-
+package com.example.security
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.security.DatabaseModel
-import com.example.security.R
 import kotlinx.android.synthetic.main.rv_layout.view.*
 
-class DataAdapter(var list:ArrayList<DatabaseModel>):RecyclerView.Adapter<DataAdapter.ViewHolder>() {
+class BookingDataAdapter(var list:ArrayList<DatabaseModel>):RecyclerView.Adapter<BookingDataAdapter.ViewHolder>() {
     class ViewHolder(itemView: View) :RecyclerView.ViewHolder(itemView)
     {
         var roomID = itemView.tv_roomID

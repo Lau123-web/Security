@@ -264,16 +264,6 @@
             android:textColor="@color/colorPrimary"
             android:textSize="18dp" />
 
-    <Button
-        android:id="@+id/logoutButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="25dp"
-        android:textSize="18dp"
-        android:textStyle="italic"
-        android:text="Logout"
-        android:textAllCaps="false" />
-    
     </LinearLayout>
 
 </LinearLayout>
