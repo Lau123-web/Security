@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.security
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -9,15 +9,16 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.database.*
+import kotlinx.android.synthetic.main.activity_checkin.*
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class CheckIn : AppCompatActivity() {
     private  lateinit var database: FirebaseDatabase
     private lateinit var referance: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_checkin)
 
         // var database = FirebaseDatabase.getInstance().reference
 

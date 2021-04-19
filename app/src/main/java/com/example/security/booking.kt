@@ -1,4 +1,4 @@
-package com.example.assignment
+package com.example.security
 
 import android.annotation.SuppressLint
 import android.app.DatePickerDialog
@@ -10,13 +10,16 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import com.example.security.R
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import kotlinx.android.synthetic.main.activity_booking.*
 import kotlinx.android.synthetic.main.activity_main.*
 import java.text.SimpleDateFormat
 import java.time.LocalDate
 import java.time.temporal.ChronoUnit
 import java.util.*
+import kotlin.check
 
 class booking : AppCompatActivity() {
 
@@ -37,7 +40,7 @@ class booking : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_booking)
 
         val buttonS: Button = findViewById<Button>(R.id.btn_send)
 
