@@ -7,9 +7,8 @@ import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_get_data.*
 import android.content.Intent
 import android.widget.Toast
-import com.example.security.DataAdapter
 
-const val EXTRA_MESSAGE = "com.example.akj_asm.MESSAGE"
+const val EXTRA_MESSAGE = "com.example.security"
 class GetData : AppCompatActivity() {
     private lateinit var database: FirebaseDatabase
     private lateinit var referance: DatabaseReference
