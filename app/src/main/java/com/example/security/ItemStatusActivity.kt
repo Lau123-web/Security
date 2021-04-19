@@ -8,7 +8,7 @@ import kotlinx.android.synthetic.main.housekeep.view.*
 import androidx.recyclerview.widget.RecyclerView
 import android.content.Intent
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_edit_item_status.*
+import kotlinx.android.synthetic.main.activity_item_status.*
 
 class EditItemStatusActivity : AppCompatActivity() {
 
@@ -19,7 +19,7 @@ class EditItemStatusActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_edit_item_status)
+        setContentView(R.layout.activity_item_status)
 
         var curRoomID = intent.getStringExtra(EXTRA_MESSAGE)
         tv_hk_roomID.text = curRoomID
