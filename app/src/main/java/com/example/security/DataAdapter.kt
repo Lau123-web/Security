@@ -1,14 +1,14 @@
-package com.example.akj_asm
+package com.example.security
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.security.DatabaseModel
 import com.example.security.R
-import com.example.security.Room
 import kotlinx.android.synthetic.main.housekeep.view.*
 
-class DataAdapter(var list:ArrayList<Room>):RecyclerView.Adapter<DataAdapter.ViewHolder>() {
+class DataAdapter(var list: ArrayList<Room>):RecyclerView.Adapter<DataAdapter.ViewHolder>() {
     class ViewHolder(itemView: View) :RecyclerView.ViewHolder(itemView)
     {
         var roomID = itemView.tv_view_roomID

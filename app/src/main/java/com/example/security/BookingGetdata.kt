@@ -3,7 +3,7 @@ package com.example.security
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.example.assignment.DataAdapter
+import com.example.security.DataAdapter
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_getdata.*
 
@@ -34,7 +34,7 @@ class BookingGetdata : AppCompatActivity() {
                 }
                 if(list.size>0)
                 {
-                    val adapter = DataAdapter(list)
+                    val adapter = BookingDataAdapter(list)
                     recyclerview.adapter = adapter
                 }
 

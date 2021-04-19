@@ -49,13 +49,6 @@ class ProfileActivity : AppCompatActivity() {
             }
         })
 
-
-        logoutButton.setOnClickListener {
-            auth.signOut()
-            startActivity(Intent(this@ProfileActivity, LoginActivity::class.java))
-            finish()
-        }
-
         editProfile.setOnClickListener{
             val intent = startActivity(Intent(this@ProfileActivity, UserActivity::class.java))
         }

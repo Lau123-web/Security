@@ -10,7 +10,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import androidx.annotation.RequiresApi
-import com.example.security.R
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import kotlinx.android.synthetic.main.activity_booking.*

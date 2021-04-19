@@ -7,7 +7,7 @@ import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_get_data.*
 import android.content.Intent
 import android.widget.Toast
-import com.example.akj_asm.DataAdapter
+import com.example.security.DataAdapter
 
 const val EXTRA_MESSAGE = "com.example.akj_asm.MESSAGE"
 class GetData : AppCompatActivity() {

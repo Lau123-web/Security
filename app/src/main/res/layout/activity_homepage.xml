@@ -75,12 +75,12 @@
         android:textColor="#FFFFFF"
         android:textSize="12sp"
         app:backgroundTint="#FF9800"
-        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintEnd_toStartOf="@+id/bookingButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/bookingButton"
         android:layout_width="136dp"
         android:layout_height="92dp"
         android:layout_marginTop="15dp"
@@ -109,7 +109,7 @@
         android:textSize="12sp"
         app:backgroundTint="#FF9800"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintTop_toBottomOf="@+id/bookingButton" />
 
     <Button
         android:id="@+id/button7"
@@ -131,16 +131,16 @@
         app:layout_constraintTop_toBottomOf="@+id/button4" />
 
     <Button
-        android:id="@+id/Logout"
+        android:id="@+id/logoutButton"
         android:layout_width="84dp"
         android:layout_height="43dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="460dp"
         android:fontFamily="serif"
         android:text="LOGOUT"
         android:textSize="10sp"
         app:backgroundTint="#FF9800"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.853"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
