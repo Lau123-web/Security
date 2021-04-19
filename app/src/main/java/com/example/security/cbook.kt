@@ -1,16 +1,13 @@
-package com.example.assignment
+package com.example.security
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.google.firebase.database.*
-import kotlinx.android.synthetic.main.rv_layout.view.*
-import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_getdata.*
-import android.content.Intent
 import android.widget.Toast
+import com.example.assignment.DataAdapter
 import kotlinx.android.synthetic.main.activity_getdata.recyclerview
-import kotlinx.android.synthetic.main.activity_rv_layout.*
 
 class cbook : AppCompatActivity() {
     private lateinit var database: FirebaseDatabase

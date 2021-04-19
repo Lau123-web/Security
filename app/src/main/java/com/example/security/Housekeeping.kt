@@ -1,13 +1,11 @@
-package com.example.akj_asm
+package com.example.security
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.example.akj_asm.DataAdapter
 import com.google.firebase.database.*
-import kotlinx.android.synthetic.main.housekeep.view.*
-import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_get_data.*
-import android.content.Intent
 
 class Housekeeping : AppCompatActivity() {
     private lateinit var database: FirebaseDatabase

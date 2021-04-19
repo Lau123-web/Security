@@ -4,6 +4,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.security.R
+import com.example.security.Room
 import kotlinx.android.synthetic.main.housekeep.view.*
 
 class DataAdapter(var list:ArrayList<Room>):RecyclerView.Adapter<DataAdapter.ViewHolder>() {

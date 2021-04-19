@@ -11,7 +11,7 @@
         android:background="@color/white"
         android:gravity="center"
         android:orientation="vertical"
-        tools:context=".EditItemStatusActivityActivity">
+        tools:context=".EditItemStatusActivity">
 
         <TextView
             android:id="@+id/textView8"

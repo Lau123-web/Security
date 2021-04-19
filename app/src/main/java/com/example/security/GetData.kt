@@ -1,14 +1,13 @@
-package com.example.akj_asm
+package com.example.security
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.google.firebase.database.*
-import kotlinx.android.synthetic.main.housekeep.view.*
-import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_get_data.*
 import android.content.Intent
 import android.widget.Toast
+import com.example.akj_asm.DataAdapter
 
 const val EXTRA_MESSAGE = "com.example.akj_asm.MESSAGE"
 class GetData : AppCompatActivity() {
@@ -28,7 +27,7 @@ class GetData : AppCompatActivity() {
 
             var roomID = txt_data_roomID.text.toString().trim()
             if(roomID.isNotEmpty()){
-                val intent = Intent(this, MainActivity::class.java).apply {
+                val intent = Intent(this, EditItemStatusActivity::class.java).apply {
                     putExtra(EXTRA_MESSAGE, roomID)
                 }
                 referance.addListenerForSingleValueEvent(object : ValueEventListener

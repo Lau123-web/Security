@@ -1,14 +1,13 @@
-package com.example.assignment
+package com.example.security
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.example.assignment.DataAdapter
 import com.google.firebase.database.*
-import kotlinx.android.synthetic.main.rv_layout.view.*
-import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_getdata.*
 
-class Getdata : AppCompatActivity() {
+class BookingGetdata : AppCompatActivity() {
     private lateinit var database: FirebaseDatabase
     private lateinit var referance: DatabaseReference
 

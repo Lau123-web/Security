@@ -4,6 +4,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.security.DatabaseModel
+import com.example.security.R
 import kotlinx.android.synthetic.main.rv_layout.view.*
 
 class DataAdapter(var list:ArrayList<DatabaseModel>):RecyclerView.Adapter<DataAdapter.ViewHolder>() {
